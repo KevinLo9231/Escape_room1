@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Drawing;
-
 
 
 public class KeyCodeLockChecker : MonoBehaviour
@@ -14,7 +12,7 @@ public class KeyCodeLockChecker : MonoBehaviour
     public string KeyCodeKey; // 正確密碼
     private int attemps = 3; // 容錯次數 
 
-    
+    //按鈕Enter、Back、0~9
     public void EnterKeyCode()
     {
         if (inputField.text == KeyCodeKey)
@@ -35,7 +33,6 @@ public class KeyCodeLockChecker : MonoBehaviour
             }
         }
     }
-
     public void PressNumButton_0()
     {
         inputField.text += 0;
