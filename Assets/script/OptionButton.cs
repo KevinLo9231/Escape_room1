@@ -17,4 +17,9 @@ public class OptionButton : MonoBehaviour
     {
         SceneManager.LoadScene("FirstScene");
     }
+
+    public void GameScene2()
+    {
+        SceneManager.LoadScene("GameScene2");
+    }
 }

@@ -244,53 +244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126362747}
   m_CullTransparentMesh: 1
---- !u!1 &244043133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 244043135}
-  - component: {fileID: 244043134}
-  m_Layer: 0
-  m_Name: sound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &244043134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244043133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e662ac56c24d0d3439aff154fe7eae22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - {fileID: 8300000, guid: f2d1a77433a6dd345b79d84f64d19177, type: 3}
-  - {fileID: 8300000, guid: f2d1a77433a6dd345b79d84f64d19177, type: 3}
---- !u!4 &244043135
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244043133}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1331.417, y: 531.77856, z: -5.4824095}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316766085
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +495,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 465948814}
-  - component: {fileID: 465948813}
+  - component: {fileID: 465948815}
   m_Layer: 0
   m_Name: panel
   m_TagString: Untagged
@@ -550,24 +503,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &465948813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465948812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81e80295042060b4fa8a60e4daff2504, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel:
-  - {fileID: 1736453567}
-  OpenPanelButton:
-  - {fileID: 1617692410}
-  oldImage: {fileID: 0}
-  newImage: {fileID: 0}
 --- !u!4 &465948814
 Transform:
   m_ObjectHideFlags: 0
@@ -583,6 +518,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &465948815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465948812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebb5ec0b338996c47baf122e3ceda857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel:
+  - {fileID: 1736453567}
+  OpenPanelButton:
+  - {fileID: 1617692410}
+  oldImage: {fileID: 0}
+  newImage: {fileID: 0}
 --- !u!1 &479364356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,7 +1692,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 465948813}
+      - m_Target: {fileID: 465948815}
         m_TargetAssemblyTypeName: PanelControl, Assembly-CSharp
         m_MethodName: On
         m_Mode: 3
@@ -2109,7 +2062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 465948813}
+      - m_Target: {fileID: 465948815}
         m_TargetAssemblyTypeName: PanelControl, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 3
