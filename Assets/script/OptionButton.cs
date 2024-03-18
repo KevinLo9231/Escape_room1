@@ -16,6 +16,7 @@ public class OptionButton : MonoBehaviour
     public void FirstScene()
     {
         SceneManager.LoadScene("FirstScene");
+        AudioManager.Instance.PlayMusic("BGM");
     }
 
     public void GameScene2()

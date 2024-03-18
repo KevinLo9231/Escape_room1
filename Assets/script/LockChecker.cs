@@ -29,10 +29,12 @@ public class LockChecker : MonoBehaviour
         if (isRed[buttonIndex])
         {
             buttons[buttonIndex].image.color = new Color(0, 1, 0, 1);  // 改變成綠色
+            AudioManager.Instance.PlaySFX("click");
         }
         else
         {
             buttons[buttonIndex].image.color = new Color(1, 0, 0, 1);  // 改變成紅色
+            AudioManager.Instance.PlaySFX("click");
         }
 
         isRed[buttonIndex] = !isRed[buttonIndex];

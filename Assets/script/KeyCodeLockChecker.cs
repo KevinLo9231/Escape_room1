@@ -40,6 +40,7 @@ public class KeyCodeLockChecker : MonoBehaviour
             {
                 AudioManager.Instance.PlaySFX("click");
                 SceneManager.LoadScene("BadEnding");
+                AudioManager.Instance.musicSource.Stop();
             }
         }
     }
