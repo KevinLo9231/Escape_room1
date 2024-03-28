@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);//為了讓聲音在下個場景不被銷毀
         }
         else
         {
@@ -30,6 +30,7 @@ public class AudioManager : MonoBehaviour
     public void PlayMusic(string name)
     {               
         Sound s = Array.Find(musicSounds, x => x.name == name);
+        //陣列中尋找名稱與參數 name 相匹配的音樂
 
         if (s == null)
          {
@@ -46,6 +47,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);
+        //陣列中尋找名稱與參數 name 相匹配的音樂
 
         if (s == null)
         {

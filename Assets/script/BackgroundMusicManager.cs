@@ -4,14 +4,14 @@ public class BackgroundMusicManager : MonoBehaviour
 {
     public static BackgroundMusicManager instance;
     public AudioSource audioSource;
-    private string volumeKey = "BGMVolume"; // 用于保存音量设置的键值
+    private string volumeKey = "BGMVolume"; // 用於保存音量的鍵值
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // 保持在不同场景中
+            DontDestroyOnLoad(gameObject); // 保持在不同場景中
         }
         else
         {
@@ -19,7 +19,7 @@ public class BackgroundMusicManager : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
-        LoadVolume(); // 加载音量设置
+        LoadVolume(); // 加載音量設置
     }
 
     void LoadVolume()

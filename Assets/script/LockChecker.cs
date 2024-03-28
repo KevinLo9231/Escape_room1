@@ -60,6 +60,7 @@ public class LockChecker : MonoBehaviour
             if (attempts == 0)
             {
                 SceneManager.LoadScene("BadEnding");
+                AudioManager.Instance.PlayMusic("Lose");
             }
         }
     }
