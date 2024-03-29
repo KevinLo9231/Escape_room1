@@ -11,7 +11,7 @@ public class OptionButton : MonoBehaviour
     public void Leave()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
     }
     public void FirstScene()
     {

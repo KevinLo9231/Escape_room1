@@ -29,7 +29,7 @@ public class KeyCodeLockChecker : MonoBehaviour
             PasswordDevice.interactable = false; // 輸入正確密碼後將不再被觸發
             AudioManager.Instance.PlaySFX("door");
             doornob.interactable = true;
-            //SceneManager.LoadScene("GameScene2");
+            KeyCodeChecker.SetActive(false);
         }
         else
         {
