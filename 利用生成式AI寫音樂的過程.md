@@ -103,8 +103,11 @@
 我只是個囚徒(囚徒)
 沒有自由(自由)
 ### 曲風
-male voice,heavy metal,hard rock
-男聲、重金屬、硬搖滾
+逃脫失敗-謎題提示曲:male voice,heavy metal,hard rock
+
+逃脫失敗-謎題提示曲2:anthemic hip hop
+
+
 ### 音樂連結
 [逃脫失敗-謎題提示曲](https://app.suno.ai/song/a2957f62-a680-4f85-a0f1-73be852cff6a)
 [逃脫失敗-謎題提示曲2](https://app.suno.ai/song/ee1dc549-aba6-4097-b7c4-fffb24158e03)
